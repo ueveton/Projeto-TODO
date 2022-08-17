@@ -26,7 +26,7 @@
                 </button>
             </div>
         </form>
-        <form action="" id="edit_form">
+        <form action="" id="edit-form" class="hide">
             <p>Edite a sua tarefa</p>
             <div class="form-control">
                 <input type="text" id="edit-input">
@@ -38,7 +38,7 @@
                 cancelar
             </button>
         </form>
-        <div id="toobar">
+        <div id="toolbar">
             <div id="search">
                 <h4>Pesquisar:</h4>
                 <form action="">
@@ -48,17 +48,17 @@
                     </button>
                 </form>
             </div>
-        </div>
-        <div id="filter">
-            <h4>Filtrar:</h4>
-            <select name="" id="filter-selected">
-                <option value="all">Todos</option>
-                <option value="done">Feitos</option>
-                <option value="todo">A Fazer</option>
-            </select>
+            <div id="filter">
+                <h4>Filtrar:</h4>
+                <select name="" id="filter-selected">
+                    <option value="all">Todos</option>
+                    <option value="done">Feitos</option>
+                    <option value="todo">A Fazer</option>
+                </select>
+            </div>
         </div>
         <div id="todo-list">
-            <div class="todo">
+            <div class="todo done">
                 <h3>Estou fazendo algo</h3>
                 <button class="fininsh-todo">
                     <i class="fa-solid fa-check"></i>
