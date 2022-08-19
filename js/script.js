@@ -4,6 +4,8 @@ const todoList = document.querySelector("#todo-list");
 const editForm = document.querySelector("#edit-form");
 const editInput = document.querySelector("#edit-input");
 const cancelEditBtn = document.querySelector("#cancel-edit-btn");
+const inputFormSearch = document.querySelector(".form-search input");
+const todosContainer = document.querySelector(".todo-container");
 
 let oldInputValue;
 
@@ -109,4 +111,16 @@ editForm.addEventListener("submit", (e) => {
     }
 
     toggleForms()
+});
+
+//pesquisa dos produtos
+
+inputFormSearch.addEventListener("input", event => {
+    const inputValue = event.target.value.trim()
+    Array.from(todosContainer.children)
+        .filter(todo => !todo.textContent.includes(inputValue))
+        .forEach(todo => {
+            todo.classList.add('hidden')
+        })
+    
 });
