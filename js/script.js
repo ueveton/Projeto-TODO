@@ -116,11 +116,19 @@ editForm.addEventListener("submit", (e) => {
 //pesquisa dos produtos
 
 inputFormSearch.addEventListener("input", event => {
-    const inputValue = event.target.value.trim()
-    Array.from(todosContainer.children)
-        .filter(todo => !todo.textContent.includes(inputValue))
+    const inputValueSearch = event.target.value.trim().toLowerCase()
+    Array.from(todoList.children)
+        .filter(todo => !todo.textContent.toLowerCase().includes(inputValueSearch))
         .forEach(todo => {
+            todo.classList.remove('d-flex')
             todo.classList.add('hidden')
+        })
+
+    Array.from(todoList.children)
+        .filter(todo => todo.textContent.toLowerCase().includes(inputValueSearch))
+        .forEach(todo => {
+            todo.classList.remove('hidden')
+            todo.classList.add('d-flex')
         })
     
 });
