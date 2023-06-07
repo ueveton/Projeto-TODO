@@ -24,7 +24,7 @@
 </div>
 <hr>
 
-[<h3>👉🏻 <b>Clique aqui para acessar o site</b></h3>](https://ueveton.github.io/Projeto-TODO/)
+[👉🏻 Clique aqui para acessar o site](https://ueveton.github.io/Projeto-TODO/)
 
 ## 📲 CONTATO
 
